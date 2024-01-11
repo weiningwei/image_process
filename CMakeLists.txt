@@ -17,4 +17,6 @@ message(STATUS "OpenCV_LIBS = ${OpenCV_LIBS}")
 add_executable(main main.cpp)
 target_link_libraries(main ${OpenCV_LIBS})
 
+add_executable(histogram examples/histogram.cpp)
+target_link_libraries(histogram ${OpenCV_LIBS})
 # cmake -G "MinGW Makefiles" ..
